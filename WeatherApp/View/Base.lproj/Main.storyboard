@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Jly-zm-m0O">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GDI-NC-Hqt">
+                                <rect key="frame" x="30" y="104" width="368" height="728"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rrE-yN-iee">
+                                        <rect key="frame" x="0.0" y="0.0" width="368" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWg-59-oOc">
+                                                <rect key="frame" x="0.0" y="1" width="40" height="38.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="QHA-Hx-okG"/>
+                                                    <constraint firstAttribute="width" constant="40" id="ckm-ca-B2t"/>
+                                                </constraints>
+                                                <color key="tintColor" name="customColor"/>
+                                                <state key="normal" backgroundImage="location.circle.fill" catalog="system"/>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H8O-F9-xLa">
+                                                <rect key="frame" x="50" y="0.0" width="268" height="40"/>
+                                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                                <color key="tintColor" name="customColor"/>
+                                                <color key="textColor" name="customColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gme-Qx-0l2">
+                                                <rect key="frame" x="328" y="1.3333333333333321" width="40" height="37.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="7Fa-44-HPU"/>
+                                                    <constraint firstAttribute="width" constant="40" id="VSK-J0-QUC"/>
+                                                </constraints>
+                                                <color key="tintColor" name="customColor"/>
+                                                <state key="normal" backgroundImage="magnifyingglass" catalog="system"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Gme-Qx-0l2" secondAttribute="trailing" id="SMG-tt-vbJ"/>
+                                            <constraint firstAttribute="height" constant="40" id="my5-k5-TXQ"/>
+                                            <constraint firstItem="ZWg-59-oOc" firstAttribute="leading" secondItem="rrE-yN-iee" secondAttribute="leading" id="z3S-kJ-vsI"/>
+                                        </constraints>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Uu5-bm-YiV">
+                                        <rect key="frame" x="248" y="60" width="120" height="120"/>
+                                        <color key="tintColor" name="customColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="Nyi-GI-zSq"/>
+                                            <constraint firstAttribute="width" constant="120" id="mhE-KW-ClQ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="pn4-8h-6vh">
+                                        <rect key="frame" x="161.33333333333337" y="200" width="206.66666666666663" height="80"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hT5-10-BVe">
+                                                <rect key="frame" x="0.0" y="0.0" width="96.333333333333329" height="80"/>
+                                                <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="80"/>
+                                                <color key="textColor" name="customColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdu-4G-WNV">
+                                                <rect key="frame" x="111.33333333333334" y="0.0" width="32" height="80"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="80"/>
+                                                <color key="textColor" name="customColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9Y-ns-bH2">
+                                                <rect key="frame" x="158.33333333333334" y="0.0" width="48.333333333333343" height="80"/>
+                                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="80"/>
+                                                <color key="textColor" name="customColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bangkok" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNP-ds-xOW">
+                                        <rect key="frame" x="199.66666666666663" y="300" width="168.33333333333337" height="40"/>
+                                        <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="40"/>
+                                        <color key="textColor" name="customColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JOl-XO-2NR">
+                                        <rect key="frame" x="0.0" y="360" width="368" height="368"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rrE-yN-iee" secondAttribute="trailing" id="abM-ko-HhB"/>
+                                    <constraint firstItem="rrE-yN-iee" firstAttribute="leading" secondItem="GDI-NC-Hqt" secondAttribute="leading" id="k9U-K6-fJc"/>
+                                    <constraint firstAttribute="bottom" secondItem="JOl-XO-2NR" secondAttribute="bottom" id="lqQ-W2-Yxc"/>
+                                    <constraint firstItem="rrE-yN-iee" firstAttribute="top" secondItem="GDI-NC-Hqt" secondAttribute="top" id="rei-a4-KZu"/>
+                                    <constraint firstItem="JOl-XO-2NR" firstAttribute="leading" secondItem="GDI-NC-Hqt" secondAttribute="leading" id="wFb-4h-pJr"/>
+                                    <constraint firstAttribute="trailing" secondItem="JOl-XO-2NR" secondAttribute="trailing" id="xef-KY-jSi"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Jly-zm-m0O" secondAttribute="trailing" id="U0m-fB-JXq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GDI-NC-Hqt" secondAttribute="bottom" constant="60" id="Ya7-yI-tLy"/>
+                            <constraint firstAttribute="bottom" secondItem="Jly-zm-m0O" secondAttribute="bottom" id="bGQ-ob-Jgn"/>
+                            <constraint firstItem="Jly-zm-m0O" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="baM-36-crj"/>
+                            <constraint firstItem="GDI-NC-Hqt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="eo3-Nj-NCX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GDI-NC-Hqt" secondAttribute="trailing" constant="30" id="kJM-Kq-xGm"/>
+                            <constraint firstItem="GDI-NC-Hqt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="lQF-Ca-CJ2"/>
+                            <constraint firstItem="Jly-zm-m0O" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qrV-3m-tWQ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.97196261682242" y="88.768898488120954"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="5616" height="3744"/>
+        <image name="location.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="sun.max" catalog="system" width="128" height="124"/>
+        <namedColor name="customColor">
+            <color red="0.12999999523162842" green="0.12999999523162842" blue="0.12999999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
