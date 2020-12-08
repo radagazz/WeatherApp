@@ -89,6 +89,9 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="g4d-Xh-S2p"/>
+                                        </constraints>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bangkok" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNP-ds-xOW">
                                         <rect key="frame" x="199.66666666666663" y="300" width="168.33333333333337" height="40"/>
@@ -101,7 +104,13 @@
                                     </view>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pn4-8h-6vh" secondAttribute="trailing" id="DgJ-7L-O2d"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uu5-bm-YiV" secondAttribute="trailing" id="EJi-qC-4Kc"/>
+                                    <constraint firstItem="pn4-8h-6vh" firstAttribute="top" secondItem="Uu5-bm-YiV" secondAttribute="bottom" constant="20" id="Pxx-na-7o4"/>
+                                    <constraint firstItem="Uu5-bm-YiV" firstAttribute="top" secondItem="rrE-yN-iee" secondAttribute="bottom" constant="20" id="W0q-be-evT"/>
+                                    <constraint firstItem="iNP-ds-xOW" firstAttribute="top" secondItem="pn4-8h-6vh" secondAttribute="bottom" constant="20" id="Yxu-2o-2Rb"/>
                                     <constraint firstAttribute="trailing" secondItem="rrE-yN-iee" secondAttribute="trailing" id="abM-ko-HhB"/>
+                                    <constraint firstItem="pn4-8h-6vh" firstAttribute="top" secondItem="Uu5-bm-YiV" secondAttribute="bottom" constant="20" id="jLI-go-8QE"/>
                                     <constraint firstItem="rrE-yN-iee" firstAttribute="leading" secondItem="GDI-NC-Hqt" secondAttribute="leading" id="k9U-K6-fJc"/>
                                     <constraint firstAttribute="bottom" secondItem="JOl-XO-2NR" secondAttribute="bottom" id="lqQ-W2-Yxc"/>
                                     <constraint firstItem="rrE-yN-iee" firstAttribute="top" secondItem="GDI-NC-Hqt" secondAttribute="top" id="rei-a4-KZu"/>
